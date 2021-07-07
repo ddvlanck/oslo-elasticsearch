@@ -88,6 +88,7 @@ module.exports = {
       '@typescript-eslint/promise-function-async': 'off',
       '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
       '@typescript-eslint/member-naming': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/naming-convention': [
         'error',
         {
