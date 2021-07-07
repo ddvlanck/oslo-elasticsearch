@@ -1,0 +1,34 @@
+{
+  "name": "@oslo/elasticsearch-init",
+  "version": "0.0.0",
+  "description": "Package to initialize the Elasticsearch client and connection with the database",
+  "keywords": [
+    "oslo",
+    "elasticsearch",
+    "init"
+  ],
+  "author": "Dwight Van Lancker <dwight.vanlancker@hotmail.com>",
+  "homepage": "https://github.com/ddvlanck/oslo-elasticsearch#readme",
+  "license": "MIT",
+  "main": "lib/oslo-init-elasticsearch.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddvlanck/oslo-elasticsearch.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ddvlanck/oslo-elasticsearch/issues"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.13.0"
+  }
+}
