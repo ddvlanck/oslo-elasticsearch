@@ -18,7 +18,7 @@ export class Orchestrator {
           configuration.searchApplicationProfile)));
 
     const stream = new Readable({ objectMode: true });
-    stream._read = () => { };   //TODO: fix this because ESLint complains
+    stream._read = () => {};
 
     const queryProcessor = new QueryProcessor();
     const result = queryProcessor.processResults(queries, stream);
