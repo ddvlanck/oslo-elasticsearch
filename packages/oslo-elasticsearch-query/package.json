@@ -1,0 +1,45 @@
+{
+  "name": "@oslo/elasticsearch-query",
+  "version": "0.0.0",
+  "description": "CLI tool to query the OSLO Knowledge Graph",
+  "bin" : {
+    "@oslo/elasticsearch-query/oslo-query": "bin/oslo-elasticsearch-query.js",
+    "oslo-query" : "bin/oslo-elasticsearch-query.js"
+  },
+  "keywords": [
+    "oslo",
+    "elasticsearch",
+    "query",
+    "knowledge",
+    "graph"
+  ],
+  "author": "Dwight Van Lancker <dwight.vanlancker@hotmail.com>",
+  "homepage": "https://github.com/ddvlanck/oslo-elasticsearch/tree/main/packages/oslo-elasticsearch#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "index.d.ts",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddvlanck/oslo-elasticsearch.git"
+  },
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/ddvlanck/oslo-elasticsearch/issues"
+  },
+  "dependencies": {
+    "@oslo/elasticsearch-init": "^0.0.0",
+    "commander": "^8.0.0"
+  }
+}
