@@ -10,7 +10,7 @@ export class Orchestrator {
     this.elasticsearch = new Elasticsearch(configuration.apiEndpoint);
   }
 
-  public async run(): Promise<Readable> {
+  public run(): Readable {
     const queries = Promise.all(configuration.keywords
       .map(key =>
         this.elasticsearch.query(key,
@@ -18,9 +18,10 @@ export class Orchestrator {
           configuration.searchApplicationProfile)));
 
     const stream = new Readable({ objectMode: true });
+    stream._read = () => { };
 
     const queryProcessor = new QueryProcessor();
-    const result = await queryProcessor.processResults(queries, stream);
+    const result = queryProcessor.processResults(queries, stream);
 
     return stream;
   }

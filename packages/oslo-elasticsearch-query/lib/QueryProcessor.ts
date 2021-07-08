@@ -6,14 +6,10 @@ export class QueryProcessor {
     stream: Readable): Promise<void> {
     const responses = await Promise.all([ queries ]);
 
-    stream._read = () => {
-      for (const response of responses) {
-        response[0].body.hits.hits
-          .map((result: any) =>
-            stream.push(JSON.stringify(result)));
-      }
-
-      stream.push(null);
-    };
+    for (const response of responses) {
+      response[0].body.hits.hits
+        .map((result: any) =>
+          stream.push(JSON.stringify(result)));
+    }
   }
 }

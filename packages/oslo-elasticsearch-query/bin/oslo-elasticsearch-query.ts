@@ -22,6 +22,6 @@ configuration.processInputOptions(options);
 
 (async() => {
   const orchestrator = new Orchestrator();
-  const stream = await orchestrator.run();
+  const stream = orchestrator.run();
   stream.pipe(process.stdout);
 })().catch(error => console.error(error.stack));
