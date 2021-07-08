@@ -1,6 +1,6 @@
 {
   "name": "@oslo-flanders/elasticsearch-init",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.0",
   "description": "Package to initialize the Elasticsearch client and connection with the database",
   "keywords": [
     "oslo",
@@ -30,6 +30,5 @@
   },
   "dependencies": {
     "@elastic/elasticsearch": "^7.13.0"
-  },
-  "gitHead": "4d5acb3844729eb186e7b01a4c0a37d09b175927"
+  }
 }

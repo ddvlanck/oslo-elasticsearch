@@ -1,6 +1,6 @@
 {
   "name": "@oslo-flanders/elasticsearch-query",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.0",
   "description": "CLI tool to query the OSLO Knowledge Graph",
   "bin": {
     "@oslo/elasticsearch-query/oslo-query": "bin/oslo-elasticsearch-query.js",
@@ -41,6 +41,5 @@
   "dependencies": {
     "@oslo/elasticsearch-init": "^0.0.1-alpha.0",
     "commander": "^8.0.0"
-  },
-  "gitHead": "4d5acb3844729eb186e7b01a4c0a37d09b175927"
+  }
 }
