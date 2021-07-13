@@ -39,7 +39,7 @@
     "url": "https://github.com/ddvlanck/oslo-elasticsearch/issues"
   },
   "dependencies": {
-    "@oslo/elasticsearch-init": "^0.0.0",
+    "@oslo-flanders/elasticsearch-init": "^0.0.0",
     "commander": "^8.0.0"
   }
 }
