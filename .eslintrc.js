@@ -147,6 +147,9 @@ module.exports = {
           }],
           'no-process-env': 'off',
           'unicorn/no-process-exit': 'off',
+        },
+        env: {
+          "jest/globals": true
         }
       }
     ]

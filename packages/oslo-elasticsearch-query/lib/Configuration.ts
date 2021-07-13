@@ -2,6 +2,8 @@ import type { OptionValues } from 'commander';
 const fs = require('fs');
 const path = require('path');
 
+require('dotenv').config();
+
 export class Configuration {
   public readonly apiEndpoint: string;
   public searchVocabulary: boolean;
@@ -13,7 +15,7 @@ export class Configuration {
     const apiEndpoint = process.env.API_ENDPOINT;
 
     if (!apiEndpoint) {
-      throw new Error(`Please provide an API endpoint that can be queries.`);
+      throw new Error(`Please provide an API endpoint that can be queried.`);
     }
 
     this.apiEndpoint = apiEndpoint;
