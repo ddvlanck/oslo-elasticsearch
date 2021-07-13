@@ -1,6 +1,6 @@
 import type { OptionValues } from 'commander';
-
 const fs = require('fs');
+const path = require('path');
 
 export class Configuration {
   public readonly apiEndpoint: string;
@@ -9,10 +9,14 @@ export class Configuration {
   public keywords: string[];
 
   public constructor() {
-    const rawdata = fs.readFileSync('config.json', 'utf8');
-    const data = JSON.parse(rawdata);
+    // eslint-disable-next-line no-process-env
+    const apiEndpoint = process.env.API_ENDPOINT;
 
-    this.apiEndpoint = data.apiEndpoint;
+    if (!apiEndpoint) {
+      throw new Error(`Please provide an API endpoint that can be queries.`);
+    }
+
+    this.apiEndpoint = apiEndpoint;
   }
 
   public processInputOptions(options: OptionValues): void {
