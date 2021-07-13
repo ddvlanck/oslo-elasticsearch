@@ -1,5 +1,5 @@
 import { Readable } from 'stream';
-import { Elasticsearch } from '@oslo/elasticsearch-init';
+import { Elasticsearch } from '@oslo-flanders/elasticsearch-init';
 import { configuration } from './Configuration';
 import { QueryProcessor } from './QueryProcessor';
 

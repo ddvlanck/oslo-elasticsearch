@@ -131,7 +131,11 @@ module.exports = {
       'unicorn/expiring-todo-comments': 'off',
       'unicorn/import-style': 'off',
       'unicorn/prefer-array-flat': 'off',
-      'unicorn/prefer-spread': 'off'
+      'unicorn/prefer-spread': 'off',
+
+      // Tests
+      'mocha/valid-test-description' : 'off',
+      'mocha/no-synchronous-tests' : 'off'
     },
     overrides: [
       {

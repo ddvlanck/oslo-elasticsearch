@@ -6,3 +6,5 @@
 .vscode
 lerna-debug.log
 .eslintcache
+**/coverage
+**/.env

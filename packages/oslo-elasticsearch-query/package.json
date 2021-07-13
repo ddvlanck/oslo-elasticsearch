@@ -33,13 +33,38 @@
   },
   "scripts": {
     "build": "npm run build:ts",
-    "build:ts": "tsc"
+    "build:ts": "tsc",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/ddvlanck/oslo-elasticsearch/issues"
   },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "../../tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "/test/.*.test.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "collectCoverage": true
+  },
   "dependencies": {
     "@oslo-flanders/elasticsearch-init": "^0.0.0",
-    "commander": "^8.0.0"
+    "commander": "^8.0.0",
+    "dotenv": "^10.0.0",
+    "install": "^0.13.0",
+    "npm": "^7.19.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3"
   }
 }
