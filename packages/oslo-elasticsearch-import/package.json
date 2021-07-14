@@ -1,0 +1,44 @@
+{
+  "name": "@oslo-flanders/elasticsearch-import",
+  "version": "0.0.0",
+  "description": "CLI tool to import vocabularies and application profiles in Elasticsearch",
+  "bin": {
+    "@oslo-flanders/elasticsearch-import/oslo-import": "bin/oslo-elasticsearch-import.js",
+    "oslo-import": "bin/oslo-elasticsearch-import.js"
+  },
+  "keywords": [
+    "oslo",
+    "elasticsearch",
+    "import",
+    "knowledge graph",
+    "application profile",
+    "vocabulary"
+  ],
+  "author": "Dwight Van Lancker",
+  "homepage": "https://github.com/ddvlanck/oslo-elasticsearch/tree/main/packages/oslo-elasticsearch#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "index.d.ts",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddvlanck/oslo-elasticsearch.git"
+  },
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsc"
+  },
+  "dependencies": {
+    "commander": "^8.0.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {}
+}

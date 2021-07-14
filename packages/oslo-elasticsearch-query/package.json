@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "CLI tool to query the OSLO Knowledge Graph",
   "bin": {
-    "@oslo/elasticsearch-query/oslo-query": "bin/oslo-elasticsearch-query.js",
+    "@oslo-flanders/elasticsearch-query/oslo-query": "bin/oslo-elasticsearch-query.js",
     "oslo-query": "bin/oslo-elasticsearch-query.js"
   },
   "keywords": [
@@ -19,7 +19,7 @@
   "main": "index.js",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "test"
   },
   "files": [
     "lib/**/*.d.ts",
@@ -59,8 +59,6 @@
     "@oslo-flanders/elasticsearch-init": "^0.0.0",
     "commander": "^8.0.0",
     "dotenv": "^10.0.0",
-    "install": "^0.13.0",
-    "npm": "^7.19.1"
   },
   "devDependencies": {
     "@elastic/elasticsearch": "^7.13.0",
